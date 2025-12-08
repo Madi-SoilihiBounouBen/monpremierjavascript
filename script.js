@@ -68,6 +68,60 @@ let nom = "Madi-Soilihi";
         console.log(client.scores[1]);
         console.log(client.scores[2]);
 
+       let joueurProfessionnel = {
+        nom : "Zinédine",//la propriété "nom" désigne le nom du joueur
+        prenom : "Yazid Zidane",
+        nationalite : ["Française", "Algérienne"],//Pour pouvoir faire appel des nationalité séparément
+        dateNaissance : "23 juin 1972",
+        taille : 1.85,
+        piedFord : "droit",
+        poste : "Milieu offensif",
+       };
+        
+       
+       //J'affiche l'ensemble de l'objet joueurProfessionnel
+       console.log(joueurProfessionnel);
+
+       //j'affiche le nom de l'objet joueurProfessionnel
+       console.log(joueurProfessionnel.nom);
+
+       //j'affiche le prenom de l'objet joueurProfessionnel
+       console.log(joueurProfessionnel.prenom);
+
+       //j'affiche la première nationalité de l'objet joueurProfessionnel
+       console.log(joueurProfessionnel.nationalite[0]);
+
+       //j'affiche la deuxième nationalité de l'objet joueurProfessionnel
+       console.log(joueurProfessionnel.nationalite[1]);
+
+       //j'affiche la date de naissance de l'objet joueurProfessionnel
+       console.log(joueurProfessionnel.dateNaissance);
+
+       //j'affiche la taille de l'objet joueurProfessionnel
+       console.log(joueurProfessionnel.taille);
+
+       //j'affiche du pied fort de l'objet joueurProfessionnel
+       console.log(joueurProfessionnel.piedFort);
+
+       //j'affiche du poste de l'objet joueurProfessionnel
+       console.log(joueurProfessionnel.poste);
        
 
 
+       let depute = {
+        nom : "Estelle Youssoufa",
+        nationalite : "Française",
+        dateNaissance : "31 juille 1978",
+        fonction : "Député",
+        diplome : "IUT de Tours, Université de Québec",
+        profession : "Journaliste",
+        partiPolitique : "UDI",
+       };
+
+       console.log(depute.nom);
+       console.log(depute.nationalite);
+       console.log(depute.dateNaissance);
+       console.log(depute.fonction);
+       console.log(depute.diplome);
+       console.log(depute.profession);
+       console.log(depute.partiPolitique);

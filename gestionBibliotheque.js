@@ -11,3 +11,4 @@ totalLivres += 5;   // On rachète 5 livres
 console.log(totalLivres); // Résultat final
 
 
+
