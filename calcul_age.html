@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcul âge</title>
+    <link rel="stylesheet" href="calcul_age.css">
+    <script src="dom_calcul_age.js"></script>
+</head>
+<body>
+<form>
+    <h2>Jeu de calcul automatique de l'âge</h2>
+
+    <div>
+        <label for="nom">Nom</label><!--La légende qui accompage mon input-->
+        <input type="text" name="nom"><!--Là où la personne pourra saisir son nom-->
+
+        <label for="prenom">Prénom(s):</label><!--La légende qui accompage mon input-->
+        <input type="text" name="prenom"><!--Là où la personne pourra saisir son prénom-->
+        <br><br>
+    </div>
+    
+    <div class="champ">
+                <label for="situation">Situation :</label>
+                <select id="situation" name="situation">
+                    <option value="">-- Choisissez votre situation --</option>
+                    <option value="etudiant">Etudiant</option>
+                    <option value="Salarié">Salarié</option>
+                    
+                </select>
+    </div>
+    <br><br>
+    <div>
+
+        <label for="anneeNaissance">Année de naissance :</label>
+        <input type="number" id="anneeNaissance" oninput="calculAge()">
+        <p>Âge : <span id="ageResultat"></span></p>
+
+    </div>
+    <input type="submit" class="envoyer"><!--Bouton envoyer-->
+</form>
+</body>
+</html>

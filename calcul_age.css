@@ -1,0 +1,25 @@
+form{
+    background: rgb(56, 198, 65);/*J'ai changé la couleur de l'arrière plan de ma formulaire*/
+    margin-top: 25px;/*J'ai déplacé la marge de ma formulaire vers le haut*/
+    margin-left: 30px;/*J'ai déplacé la marge de ma formulaire vers la gauche*/
+    padding-top: 25px;/*Je déplace les contenus de ma formulaire d'une marge vers le bas*/
+    border-color: rgb(221, 23, 23);
+    box-shadow: 10px 5px 5px rgb(0, 0, 0);
+    width: 755px;
+}
+div{
+    display: inline;/*Afficher sur la même ligne sur le site*/
+    margin-left: 30px;
+}
+.envoyer{
+    margin-bottom: 25px;/*J'ai déplacé la marge demon boutou "envoyer" vers le bas*/
+    margin-left: 30px;/*J'ai déplacé la marge de mon boutou "envoyer" vers la gauche*/
+}
+
+h2 {
+    background: linear-gradient(130deg, #acaf4c, #2E7D32);
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    text-align: center;
+    border-bottom: 4px solid #65e92d;
+}
