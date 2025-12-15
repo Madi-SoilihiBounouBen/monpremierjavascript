@@ -5,15 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calcul âge</title>
     <link rel="stylesheet" href="calcul_age.css">
-    <script src="dom_calcul_age.js"></script>
+    <script src="dom_calcul_age.js" defer></script>
 </head>
 <body>
 <form>
-    <h2>Jeu de calcul automatique de l'âge</h2>
+
+    <div>
+        <h2>Jeu de calcul automatique de l'âge</h2>
+    </div>
+
+    <div id="recensement">
+        <p id="paragraphe1">Nous récensons la population de Mayotte.</p>
+    </div>
 
     <div>
         <label for="nom">Nom</label><!--La légende qui accompage mon input-->
-        <input type="text" name="nom"><!--Là où la personne pourra saisir son nom-->
+        <input type="text" name="nom" id="nom"><!--Là où la personne pourra saisir son nom-->
 
         <label for="prenom">Prénom(s):</label><!--La légende qui accompage mon input-->
         <input type="text" name="prenom"><!--Là où la personne pourra saisir son prénom-->
@@ -37,7 +44,8 @@
         <p>Âge : <span id="ageResultat"></span></p>
 
     </div>
-    <input type="submit" class="envoyer"><!--Bouton envoyer-->
+
+    <input type="button" value="Valider" id="boutonValider"><!--Bouton valider-->
 </form>
 </body>
 </html>

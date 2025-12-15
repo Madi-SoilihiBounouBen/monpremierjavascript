@@ -11,10 +11,6 @@ div{
     display: inline;/*Afficher sur la même ligne sur le site*/
     margin-left: 30px;
 }
-.envoyer{
-    margin-bottom: 25px;/*J'ai déplacé la marge demon boutou "envoyer" vers le bas*/
-    margin-left: 30px;/*J'ai déplacé la marge de mon boutou "envoyer" vers la gauche*/
-}
 
 h2 {
     background: linear-gradient(130deg, #acaf4c, #2E7D32);
