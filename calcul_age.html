@@ -6,8 +6,22 @@
     <title>Calcul âge</title>
     <link rel="stylesheet" href="calcul_age.css">
     <script src="dom_calcul_age.js" defer></script>
+    <script src="evenment.js" defer></script>
 </head>
 <body>
+    <!-- J'affiche la date du jour et l'heure -->
+    <div id="date" class="date">
+        <button id="validerDate">Date du jour</button>
+        <span id="dateDuJour"></span>
+        <br>
+
+        <p>
+            Date au format local :
+            <span id="dateDuJourFormat2"></span>
+        </p>
+        
+    </div>
+
     <!-- Je liste les communes de Mayotte -->
     <h3 id="communes"></h3>
     <ol id="listCommunes">
