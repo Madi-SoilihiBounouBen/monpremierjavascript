@@ -24,3 +24,37 @@ elementBoutonValiderDate.addEventListener("click", function () {
 
     elementSpanDateDuJourForamat2.textContent = maDate.toDateString();
 });
+
+//mon événement "keydown"
+/**
+ * Je code un événement de type KEYDOWN.
+ * l'événement KEYDOWN va se déclancher lorsque j'appuie sur une touche de mon clavier
+ */
+//1. tout d'abord, je récupère l'événement HTML qui sera asssocié à l'événement KEYDOWN
+let elementBoutonFleche = document.querySelector("#boutonFleche");
+
+//2.j'associe l'événement KEYDOWN mon élément HTML en utilisant la méthode addEventLister(). 
+// A l'interieur de la méthode eAddEventLister(), je passe une fonction fléchée comme suit '() => {}'.
+elementBoutonFleche.addEventListener("keydown", (event) => {
+    console.log("=== Je suis dans l'événement KEYDOWN ===");
+    console.log("Clé event : ", event.key);
+});
+
+//mon événement "CHANGE"
+/**
+ * Je code un événement de type CHANGE.
+ * l'événement CHANGE va se déclancher lorsque j'appuie sur une touche de mon clavier.
+ */
+// 1. tout d'abord, je récupère l'élément HTML qui sera associé l'événement CHANGE.
+let elementInputNomForm = document.querySelector("#nom");
+
+//2.j'associe l'événement CHANGE mon élément HTML en utilisant la méthode addEventLister(). 
+// A l'interieur de la méthode eAddEventLister(), je passe une fonction fléchée comme suit '() => {}'.
+//la fonction fléchée prend le paramètre event.
+let messageSolution;//je déclare une variable vide.
+let elementNomUtilisateur = document.querySelector("#nomUtilisateur");
+elementInputNomForm.addEventListener("change", (event) => {
+    console.log(event.target.value);
+    messageSolution = `Bonjour ${event.target.value}`;
+    elementNomUtilisateur.textContent = messageSolution;
+});
