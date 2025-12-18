@@ -81,8 +81,14 @@ elementForm.addEventListener("submit", (event) => {
     // Récupération des données
     const nom = document.querySelector("#nom").value;
     const prenom = document.querySelector("#prenom").value;
+    const age = document.querySelector("#ageResultat").value;
+    const situation = document.querySelector("#situation").value;
+    const anneeNaissance = document.querySelector("#anneeNaissance").value;
 
     console.log("Nom :", nom);
     console.log("Prénom :", prenom);
+    console.log("Âge : ", ageResultat);
+    console.log("Situation : ", situation);
+    console.log("Année de naissance : ", anneeNaissance);
 });
 
