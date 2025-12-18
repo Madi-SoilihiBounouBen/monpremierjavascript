@@ -59,10 +59,10 @@
 
     <div>
         <label for="nom">Nom</label><!--La légende qui accompage mon input-->
-        <input type="text" name="nom" id="nom"><!--Là où la personne pourra saisir son nom-->
+        <input type="text" id="nom" name="nom"><!--Là où la personne pourra saisir son nom-->
 
         <label for="prenom">Prénom(s):</label><!--La légende qui accompage mon input-->
-        <input type="text" name="prenom"><!--Là où la personne pourra saisir son prénom-->
+        <input type="text" id="prenom" name="prenom"><!--Là où la personne pourra saisir son prénom-->
         <br><br>
     </div>
     
@@ -82,12 +82,12 @@
         <input type="number" id="anneeNaissance" oninput="calculAge()">
         <p id="messageUtilisateur">
             <span id="nomUtilisateur"></span>
-             <span id="ageResultat">Vous êtes agé de :</span>
+            <span id="ageResultat">Vous êtes agé de :</span>
         </p>
 
     </div>
 
-    <input type="button" value="Valider" id="boutonValider"><!--Bouton valider-->
+    <input type="submit" value="Valider" id="boutonValider"><!--Bouton valider-->
 </form>
 
 <!--J'insère une section en utilsant la DOM côté JavaScript -->

@@ -58,3 +58,31 @@ elementInputNomForm.addEventListener("change", (event) => {
     messageSolution = `Bonjour ${event.target.value}`;
     elementNomUtilisateur.textContent = messageSolution;
 });
+
+/**
+ * Envoyer le formulaire
+ * Je vais récupérer les données saisies sur le formulaire
+ * - nom
+ * - prénom
+ * - situation
+ * - année de naissance
+ */
+
+//Je récupère la balise <form> </form> avec ses enfants. Ensuite, je stocke la balise dans la variable elementForm.
+let elementForm = document.querySelector('form');
+console.log("elementForm : ", elementForm);
+
+//J'associe l'événement "submit"
+elementForm.addEventListener("submit", (event) => {
+    event.preventDefault(); // empêche le rechargement
+
+    console.log("### Je suis dans l'événement submit du formulaire ###");
+
+    // Récupération des données
+    const nom = document.querySelector("#nom").value;
+    const prenom = document.querySelector("#prenom").value;
+
+    console.log("Nom :", nom);
+    console.log("Prénom :", prenom);
+});
+
