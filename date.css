@@ -1,9 +1,25 @@
 /*
 Je mets en forme mon fichier html
 */
+body{
+    /*Ajout d'une image*/
+    background-image: url(mond.avif);
 
+     background-position: center;
+    /* Centre l’image */
+
+     background-repeat: no-repeat;
+    /* Empêche la répétition de l’image */
+
+    background-size: cover;
+    /* L’image couvre tout l’écran */
+
+    height: 100vh;
+
+    
+}
 #date , #heure{
-    background-color: rgb(251, 0, 255);
+    background-color: rgb(0, 90, 174);
     width: 400px;
     height: 100px;
     padding: 20px;
@@ -14,12 +30,19 @@ Je mets en forme mon fichier html
 }
 
 p{
-    color: blue;
-    background-color: rgb(217, 251, 22);
+    color: rgb(41, 41, 45);
+    background-color: rgb(251, 171, 22);
     width: 200px;
     height: 50px;
     padding: 15px;
     border-radius: 10px;
     margin: 15px;
+}
+
+h1{
+    color: rgb(17, 89, 234);
+    text-align: center;
+    font-size: 60px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
